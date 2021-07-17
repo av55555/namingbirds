@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Naming Birds</title>
+    </head>
+    <body>
+          <h1>Naming Birds</h1>
+        <h3>Blick on the next button to see the next bird.</h3>
+        <img id="image" src="https://www.lyricbirdfood.com/media/1567/thinkstockphotos-624747754.jpg?crop=0.079840366690362027,0.20504368904952211,0.02160450994800189,0.092430559088225533&cropmode=percentage&width=700&height=365&rnd=132083621430000000" style="height: 40%; width:40%;" >
+<h5 id="name">Blue Jay</h5>
+<button type="button" onclick="next()">Next</button>
+    </body>
+    <script>
+        var bird_pictures=["https://www.lyricbirdfood.com/media/1567/thinkstockphotos-624747754.jpg?crop=0.079840366690362027,0.20504368904952211,0.02160450994800189,0.092430559088225533&cropmode=percentage&width=700&height=365&rnd=132083621430000000", "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/297087301/900", "https://images.squarespace-cdn.com/content/v1/578ff19b9f7456c15b63f7e7/1587135153488-5N5CISI9036IJUPZMWE7/aab+american+goldfinch+breeding+male.jpg?format=1000w", "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/308564891/1800"];
+
+var i=0
+function next(){
+  if(i==3)
+    {
+      i=0;
+    }
+  
+  document.getElementById("image").src=bird_pictures[i];
+  
+  
+i++  ;
+  }
+
+
+  var bird_names=["Blue Jay", "Northern cardinal", "American Goldfinch"]
+  var z=0
+function next(){
+  if(z=3)
+    {
+      z=0;
+    }
+  
+  document.getElementById("name").innerHTML=bird_names[z];
+  
+  
+z++  ;
+  }
+   
+   </script>
+</html>
